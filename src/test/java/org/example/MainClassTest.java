@@ -6,10 +6,9 @@ import org.junit.Test;
 public class MainClassTest {
 
     MainClass mainClass = new MainClass();
-    private int expectedResult = 14;
 
     @Test
-    public void testGetLocalNumber(){
-        Assert.assertEquals("Validate that getLocalNumber is returning 14", expectedResult, mainClass.getLocalNumber());
+    public void testGetLocalNumber() {
+        Assert.assertEquals("getLocalNumber is not returning 14", 14, mainClass.getLocalNumber());
     }
 }
