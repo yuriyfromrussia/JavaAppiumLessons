@@ -2,11 +2,11 @@ package org.example;
 
 public class MainClass {
 
-    private int x = 14;
+    private int class_number = 20;
 
-    public int getLocalNumber()
+    public int getClassNumber()
     {
-      return x;
+      return class_number;
     }
 
 }
