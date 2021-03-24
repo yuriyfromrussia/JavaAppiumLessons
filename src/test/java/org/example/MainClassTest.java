@@ -13,6 +13,6 @@ public class MainClassTest {
 
     @Test
     public void testGetLocalNumber() {
-        Assert.assertTrue("String contains 'hello' or 'Hello'", StringUtils.containsIgnoreCase(actualResult, expectedResult));
+        Assert.assertTrue("String does NOT contain 'hello' or 'Hello'", StringUtils.containsIgnoreCase(actualResult, expectedResult));
     }
 }
