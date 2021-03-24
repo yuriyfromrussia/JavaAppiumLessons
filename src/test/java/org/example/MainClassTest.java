@@ -1,15 +1,18 @@
 package org.example;
 
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
 import org.junit.Test;
+
 
 public class MainClassTest {
 
     MainClass mainClass = new MainClass();
-    private int expectedResult = 45;
+    private String expectedResult = "Hello";
+    private String actualResult = mainClass.getClassString();
 
     @Test
-    public void testGetLocalNumber(){
-        Assert.assertTrue("getClassNumber is returning value greater than " + expectedResult, mainClass.getClassNumber() >expectedResult);
+    public void testGetLocalNumber() {
+        Assert.assertTrue("String contains 'hello' or 'Hello'", StringUtils.containsIgnoreCase(actualResult, expectedResult));
     }
 }
